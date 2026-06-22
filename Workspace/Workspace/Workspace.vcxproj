@@ -142,11 +142,37 @@
     <ClCompile Include="2Number_Pattern.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Inverted Letter Pattern.cpp" />
+    <ClCompile Include="Inverted Letter Pattern.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Inverted_Number_Pattern.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Letter Pattern.cpp" />
+    <ClCompile Include="Letter Pattern.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MyLibe.h" />
+    <ClCompile Include="PS L3  P14 Check Sparce Matrix.cpp" />
+    <ClCompile Include="PS L3 N11  Check Matrices Equality.cpp" />
+    <ClCompile Include="PS L3 P1 3x3 Random matrix.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PS L3 P10 Sum Of Matrix.cpp" />
+    <ClCompile Include="PS L3 P12 Check Typical  Matrices.cpp" />
+    <ClCompile Include="PS L3 P13 Check Identity Matrix.cpp" />
+    <ClCompile Include="PS L3 P15 Count Number in Matrix.cpp" />
+    <ClCompile Include="PS L3 P16 Check Sparse Matrix(2).cpp" />
+    <ClCompile Include="PS L3 P16 Check Sparse Matrix.cpp" />
+    <ClCompile Include="PS L3 P2 Sum Each Row in Matrix (2).cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PS L3 P4 sum Each Column in Matrix to Arry.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PS L3 P6 3x3 Ordered Matrix.cpp" />
+    <ClCompile Include="PS L3 P7 Traspose Matrix (1).cpp" />
+    <ClCompile Include="PS L3 P8  Multiply Two Matrices.cpp" />
+    <ClCompile Include="PS L3 P9 Print Middle Row and Col of Matrix.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

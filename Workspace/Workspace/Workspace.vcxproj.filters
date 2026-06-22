@@ -13,34 +13,73 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\01_Patterns_And_Shapes">
+    <Filter Include="Source Files\Course 7 %28Problem Solving%29">
+      <UniqueIdentifier>{12df6178-6f32-421c-9427-988aa1e29a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Course 5 %28Problem Solving%29">
       <UniqueIdentifier>{499ef3e5-8f6d-43a6-93aa-c10bdd5f05c4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\02_Basic_Math_And_Digits">
-      <UniqueIdentifier>{90060631-36dd-47f6-808c-8694cff8c5b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03_Random_Numbers">
-      <UniqueIdentifier>{d4b7ccf6-52be-4790-a772-ea2e202972fd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\04_Arrays_Basics">
-      <UniqueIdentifier>{31cb1d43-486b-4cd8-8fac-ba018ae0d6b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\05_Arrays_Operatioins%28النسخ,الفرز ,البحث%28">
-      <UniqueIdentifier>{088a5595-ea59-46e3-9de9-6087069ae44f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Inverted_Number_Pattern.cpp">
-      <Filter>Source Files\01_Patterns_And_Shapes</Filter>
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="2Number_Pattern.cpp">
-      <Filter>Source Files\01_Patterns_And_Shapes</Filter>
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="Inverted Letter Pattern.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="Letter Pattern.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibe.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P1 3x3 Random matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P2 Sum Each Row in Matrix (2).cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P4 sum Each Column in Matrix to Arry.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3  P14 Check Sparce Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P15 Count Number in Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P6 3x3 Ordered Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P7 Traspose Matrix (1).cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P8  Multiply Two Matrices.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P9 Print Middle Row and Col of Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P10 Sum Of Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 N11  Check Matrices Equality.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P12 Check Typical  Matrices.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P13 Check Identity Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P16 Check Sparse Matrix(2).cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P16 Check Sparse Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
