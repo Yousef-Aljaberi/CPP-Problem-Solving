@@ -1,20 +1,16 @@
 #include<iostream>
+#include"MyLibe.h"
 #include <iomanip>
 using namespace std;
 
-int RandomNumber(int From, int To)
-{
-    int randnum = rand() % (To - From + 1) + From;
 
-    return randnum;
-}
 void FillArryWithRandomNumber(int arr[3][3], short Rows, short Cols)
 {
     for (int i = 0; i < Rows; i++)
     {
         for (int j = 0; j < Cols; j++)
         {
-            arr[i][j] = RandomNumber(1, 100);
+            arr[i][j] =Helpers::RandomNumber(1, 100);
         }
     }
 

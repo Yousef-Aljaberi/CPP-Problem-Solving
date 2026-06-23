@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include <iostream>
 #include <string>
 using namespace std;
@@ -181,7 +180,7 @@ namespace Helpers
         system("cls");
         system("color 0F");
     }
-   
+
 
 
 }

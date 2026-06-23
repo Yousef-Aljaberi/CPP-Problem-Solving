@@ -21,23 +21,22 @@ int ReversedNumber(int Number)
 		Number2 = Number2 * 10 + Remainder;
 
 
-	} 
+	}
 	return Number2;
 
 }
 
-void PrintDigits(int Number)
+void CheckePalindromeNume(int number1)
 {
-	int Remainder = 0;
-	while (Number > 0)
+	int reversedNumber = ReversedNumber(number1);
+	if (number1 == reversedNumber)
 	{
-		Remainder = Number % 10;
-		Number = Number / 10;
-		cout << Remainder << endl;
-
+		cout << "Yes, it is a Palindrom Number" << endl;
 	}
+	else
+		cout << "No, it is NOT a palindrome number " << endl;
 }
 int main()
 {
-	PrintDigits(ReversedNumber(readPositiveNumber("Please enter a positive Number")));
+	CheckePalindromeNume(readPositiveNumber("Please enter a positive Number"));
 }

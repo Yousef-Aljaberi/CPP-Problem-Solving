@@ -39,9 +39,7 @@ void PrintMatrix(int Matrix[3][3], short Rows, short Cols)
 
 int main()
 {
-    int matrix[3][3] = { {2,0,0}
-                        ,{0,1,0}
-                        ,{0,0,1} };
+    int matrix[3][3] = { {2,0,0},{0,1,0},{0,0,1} };
 
     PrintMatrix(matrix, 3, 3);
 

@@ -33,9 +33,6 @@
     <ClCompile Include="Letter Pattern.cpp">
       <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
-    <ClCompile Include="MyLibe.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="PS L3 P1 3x3 Random matrix.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
@@ -61,9 +58,6 @@
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="PS L3 P9 Print Middle Row and Col of Matrix.cpp">
-      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
-    </ClCompile>
-    <ClCompile Include="PS L3 P10 Sum Of Matrix.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="PS L3 N11  Check Matrices Equality.cpp">
@@ -108,5 +102,61 @@
     <ClCompile Include="PS L2 P10  print Digits in oreder.cpp">
       <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="PS L3 P17 Number Exists In Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P10 Sum Of Matrix.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P18 Intersected Numbers in Matrices.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P19 Min_Max Number in Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 Palindrom Matrix.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P21 Fibonacci Series.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L11 Palindrome Number.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L312 Inverted Number pattern.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L13 Number Pattern.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS P14 Inverted Letter Pattern.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P15 Letter Pattern.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P16 Print All words from AAA to ZZZ.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P17 Guess a 3_Letter Password.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P18 Encrypt,Decrypt Text.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P19 Random Numbers form  1 to 3.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P 21 Generate Keys.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P22 Repeated Elements Count in Arry.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyLibe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
