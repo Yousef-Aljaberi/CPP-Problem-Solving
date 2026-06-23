@@ -24,7 +24,7 @@
     <ClCompile Include="Inverted_Number_Pattern.cpp">
       <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
-    <ClCompile Include="2Number_Pattern.cpp">
+    <ClCompile Include="PS L2 Number_Pattern.cpp">
       <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="Inverted Letter Pattern.cpp">
@@ -80,6 +80,33 @@
     </ClCompile>
     <ClCompile Include="PS L3 P16 Check Sparse Matrix.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2  P2 Print all  prime Numbers 1 to n.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2  P3 Perfect Number.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P4 Perfect Number from 1 to N (my).cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P5 Print Digits in a reversed order.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P6 sum of Digits.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P7 revers Number.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P8 Digit frequency.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P9 Digit Frequency.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L2 P10  print Digits in oreder.cpp">
+      <Filter>Source Files\Course 5 %28Problem Solving%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

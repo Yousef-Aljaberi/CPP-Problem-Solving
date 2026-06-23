@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2Number_Pattern.cpp">
+    <ClCompile Include="PS L2  P2 Print all  prime Numbers 1 to n.cpp" />
+    <ClCompile Include="PS L2  P3 Perfect Number.cpp" />
+    <ClCompile Include="PS L2 Number_Pattern.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Inverted Letter Pattern.cpp">
@@ -152,6 +154,13 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="MyLibe.h" />
+    <ClCompile Include="PS L2 P10  print Digits in oreder.cpp" />
+    <ClCompile Include="PS L2 P4 Perfect Number from 1 to N (my).cpp" />
+    <ClCompile Include="PS L2 P5 Print Digits in a reversed order.cpp" />
+    <ClCompile Include="PS L2 P6 sum of Digits.cpp" />
+    <ClCompile Include="PS L2 P7 revers Number.cpp" />
+    <ClCompile Include="PS L2 P8 Digit frequency.cpp" />
+    <ClCompile Include="PS L2 P9 Digit Frequency.cpp" />
     <ClCompile Include="PS L3  P14 Check Sparce Matrix.cpp" />
     <ClCompile Include="PS L3 N11  Check Matrices Equality.cpp" />
     <ClCompile Include="PS L3 P1 3x3 Random matrix.cpp">
