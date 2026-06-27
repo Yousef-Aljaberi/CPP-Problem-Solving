@@ -1,28 +1,26 @@
 #include<iostream>
 #include<cstdio>
 #include"MyLibe.h"
+enum enWhatToCount{Capital =1, Small =2 , All=3};
 
-int CountCapitalLetters(string text)
+int CountLetters(string text, enWhatToCount WhatToCount = enWhatToCount::All)
 {
-	int Count = 0;
+	if (WhatToCount == enWhatToCount::All)
+	{
+		return text.length();
+	}
+	int Counter = 0;
 	for (int i = 0; i < text.length(); i++)
 	{
-		if (isupper(text[i]))
-			Count++;
+		if (  WhatToCount==enWhatToCount ::Small&&  islower(text[i]))
+			Counter++;
+
+		else if (WhatToCount == enWhatToCount::Capital && isupper(text[i]))
+			Counter++;
 	}
-	return Count;
+	return Counter;
 }
 
-int CountSmallLetters(string text)
-{
-	int Count = 0;
-	for (int i = 0; i < text.length(); i++)
-	{
-		if (islower(text[i]))
-			Count++;
-	}
-	return Count;
-}
 
 
 
@@ -30,12 +28,13 @@ int main()
 {
 	string text = InPut::PrintMessageAndReadText("Please Enter String\n");
 
-	int CapitalLetters = 0, SmallLetters = 0;
-	CapitalLetters = CountCapitalLetters(text);
-	SmallLetters = CountSmallLetters(text);
-	cout << "\nString length =     " << text.length();
-	cout << "\n Capital letters  count =	" << CapitalLetters << endl;
-	cout << "\n Small letters  count =	" << SmallLetters << endl;
+	cout << "\nString length =     " << CountLetters(text);
+	cout << "\n Capital letters  count =	" << CountLetters(text,enWhatToCount::Capital) << endl;
+	cout << "\n Small letters  count =	" << CountLetters(text, enWhatToCount::Small) << endl;
+
+
+	
 
 
 }
+ 

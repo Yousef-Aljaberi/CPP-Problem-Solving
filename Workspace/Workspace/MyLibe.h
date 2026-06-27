@@ -47,6 +47,14 @@ namespace InPut
         getline(cin, text);
         return text;
     }
+
+    char PrintMessageAndReadChar(string message)
+    {
+        cout << message << endl;
+        char char1;
+        cin >> char1;
+        return char1;
+    }
 }
 
 namespace OutPut

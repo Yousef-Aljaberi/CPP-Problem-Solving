@@ -177,6 +177,39 @@
     <ClCompile Include="PS L3 P29 Count Small_Capital Letters.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="PS L3 P30 Count Letters.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P31 Count Letters (Match Case).cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P 32 Is Vowel.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P34 Print All Vowel In String.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P33 Count Vowels.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P35 Print Each Word Of String.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P36 Count Each Word in String.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P37 Split String.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P38 Trim Left ,Trim Right,Trim.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P39 Join String.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P40 Join String   OverLoading.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">
