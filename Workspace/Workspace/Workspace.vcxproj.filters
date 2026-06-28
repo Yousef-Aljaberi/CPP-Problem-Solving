@@ -210,6 +210,15 @@
     <ClCompile Include="PS L3 P40 Join String   OverLoading.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="PS L3 P41 Reverse Word.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P42 Replace Words.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P42 Replace Words Using Replace Function.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">

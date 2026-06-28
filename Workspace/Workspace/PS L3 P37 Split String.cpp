@@ -20,7 +20,6 @@ vector<string> SplitString(string text, string delim)
 	if (text != "")
 	{
 		vString.push_back(text);
-
 	}
 
 	return vString;
