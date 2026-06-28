@@ -219,6 +219,12 @@
     <ClCompile Include="PS L3 P42 Replace Words Using Replace Function.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="PS L3 P44 Remove Punctuations.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="PS L3 P45 Convert Record to Line.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">
