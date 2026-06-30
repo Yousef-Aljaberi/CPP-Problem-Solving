@@ -1,0 +1,80 @@
+[33mcommit e8d3ac2b177decd5bb6976a0f3c73840a67bd538[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Mon Jun 29 00:55:47 2026 +0300
+
+       Add solutioins for Course 7th assignments by Dr. Mohammed Abu_Hadhood
+
+[33mcommit 10d678c9286789fd0abe6d8518cb529f3c2af597[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Sun Jun 28 20:35:38 2026 +0300
+
+      Add solutioins for Course 7th assignments by Dr. Mohammed Abu_Hadhood
+
+[33mcommit 00b66b5748f5fafbb4e918771ca957fe573db187[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Sun Jun 28 00:23:57 2026 +0300
+
+     Add solutioins for Course 7th assignments by Dr. Mohammed Abu_Hadhood
+
+[33mcommit eb192fd7dc54868eb88bb9abaf5d712fd5db92fb[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Thu Jun 25 23:45:27 2026 +0300
+
+     solving some Problem from 7th course with Abu_Hadhood
+
+[33mcommit 35cb5fdf0e684c43b3de79078c58ae2b16b7d668[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Tue Jun 23 22:25:10 2026 +0300
+
+     Add some Problem solving
+
+[33mcommit e1e948372afa857e6f782790a5e08597569c98ae[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Tue Jun 23 11:08:56 2026 +0300
+
+     I add Problem solving from course 5th
+
+[33mcommit b52e53c4afc159269b8186cbd4cec2562a673ab8[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Tue Jun 23 00:44:20 2026 +0300
+
+     I Add Problem solving from course 7th with Abu_Hadhood, from 1 to 16
+
+[33mcommit fd633ae656c6cb5870f7877f6a500b768bd65e4e[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Wed May 20 08:49:20 2026 +0300
+
+    add solve Letter pattern and inverted pattern
+
+[33mcommit 8fe18dbd4b2a12bb45952887b31f50c507ee8907[m
+Merge: 662fd57 46e8dee
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Wed May 20 08:27:31 2026 +0300
+
+    Merge branch 'main' of https://github.com/Yousef-Aljaberi/CPP-Problem-Solving
+
+[33mcommit 662fd57ee215a7b54883426e503a53311c7722ad[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Wed May 20 08:25:20 2026 +0300
+
+    another solve to inverted patterns
+
+[33mcommit 46e8dee15fdbefd38042219580a65ca524d288ff[m
+Author: Yousef-Aljaberi <yousof4pro@gmail.com>
+Date:   Wed May 20 04:29:43 2026 +0300
+
+    Update README.md
+    
+    modify readme file
+
+[33mcommit 5eaec3300c695a312cdebe530c58b07e3e5d8d9c[m
+Author: Yousef Aljaberi+ <yousof4pro@gamil.com>
+Date:   Wed May 20 04:10:41 2026 +0300
+
+    Solve Inverted Number Pattern problem
+
+[33mcommit 71d3ef86d88c663b36f1b9c23fbc7dd410a66226[m
+Author: Yousef-Aljaberi <yousof4pro@gmail.com>
+Date:   Wed May 20 03:22:26 2026 +0300
+
+    Initial commit

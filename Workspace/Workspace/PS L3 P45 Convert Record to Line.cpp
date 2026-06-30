@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-#include"MyLibe.h"
+using namespace std;
 
 struct stClintData
 {
@@ -8,8 +8,26 @@ struct stClintData
 	string PinCode;
 	string AccountNumber = "";
 	string PhoneNumber;
-	string AccountBalance;
+	double AccountBalance;
 };
+
+
+stClintData ReadClintData()
+{
+	stClintData ClintData;
+	cout << "Enter Account Number? \n";
+	getline(cin, ClintData.AccountNumber);
+	cout << "Enter  PinCode? \n";
+	getline(cin, ClintData.PinCode);
+	cout << "Enter Name? \n";
+	getline(cin, ClintData.Name);
+	cout << "Enter Phone Number?  \n";
+	getline(cin, ClintData.PhoneNumber);
+	cout << "Enter Account Balance? \n";
+	cin>> ClintData.AccountBalance;
+
+	return ClintData;
+}
 
 string ConverRecordToLine(stClintData ClintData, string delim)
 {
@@ -18,7 +36,7 @@ string ConverRecordToLine(stClintData ClintData, string delim)
 	S1 += ClintData.PinCode + delim;
 	S1 += ClintData.Name + delim;
 	S1 += ClintData.PhoneNumber + delim;
-	S1 += ClintData.AccountBalance+".000000";
+	S1 +=to_string( ClintData.AccountBalance);
 	return S1;
 
 
@@ -26,13 +44,9 @@ string ConverRecordToLine(stClintData ClintData, string delim)
 int main()
 {
 	stClintData ClintData;
+	ClintData = ReadClintData();
 
-	ClintData.AccountNumber = InPut::PrintMessageAndReadText("Enter Account Number? ");
-	ClintData.PinCode = InPut::PrintMessageAndReadText("Enter  PinCode? ");
-	ClintData.Name = InPut::PrintMessageAndReadText("Enter Name? ");
-	ClintData.PhoneNumber = InPut::PrintMessageAndReadText("Enter Phone Number? ");
-	ClintData.AccountBalance = InPut::PrintMessageAndReadText("Enter Account Balance? ");
-
+	
 	cout<<"\n\nClint Record for saving is: \n"<<ConverRecordToLine(ClintData, "#//#");
 
 
