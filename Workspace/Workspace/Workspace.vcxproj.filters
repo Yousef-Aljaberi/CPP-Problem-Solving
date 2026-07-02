@@ -240,6 +240,9 @@
     <ClCompile Include="PS L3 P50 Delete CLient By Account Number.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="PS L3 P51 Update Client By AccountNumber.cpp">
+      <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">

@@ -2,6 +2,7 @@
 #include<string>
 #include<vector>
 #include<fstream>
+#include<iomanip>
 
 using namespace std;
 const string FileName = "ClintFile.txt";
@@ -14,9 +15,11 @@ struct stClintData
 	string PhoneNumber;
 	double AccountBalance;
 	bool MarkForDelete = false;
+
 };
 
-string ConverRecordToLine(stClintData ClintData, string delim="#//#")
+
+string ConverRecordToLine(stClintData ClintData, string delim = "#//#")
 {
 	string S1 = "";
 	S1 += ClintData.AccountNumber + delim;
@@ -113,9 +116,9 @@ void PrintClient(stClintData Client)
 }
 
 
- 
 
-bool FindClientByAccountNumber(vector<stClintData> Clients ,stClintData &Client, string sAccountNumber)
+
+bool FindClientByAccountNumber(vector<stClintData> Clients, stClintData& Client, string sAccountNumber)
 {
 
 	for (stClintData C : Clients)
@@ -129,18 +132,7 @@ bool FindClientByAccountNumber(vector<stClintData> Clients ,stClintData &Client,
 	return false;
 
 }
-bool MarkClientForDeleteByAccountNumber(string AccountNumber, vector<stClintData> &vClients)
-{
-	for (stClintData& C : vClients)
-	{
-		if (C.AccountNumber == AccountNumber)
-		{
-			C.MarkForDelete = true;
-			return true;
-		}
-	}
-	return false;
-}
+
 void SaveClientsDataToFile(string FileName, vector<stClintData> vClients)
 {
 	fstream MyFile;
@@ -157,47 +149,68 @@ void SaveClientsDataToFile(string FileName, vector<stClintData> vClients)
 				LineData = ConverRecordToLine(C);
 				MyFile << LineData << endl;
 			}
+			
 		}
 	}
 }
-bool DeleteClientByAccountNumber( string sAccountNumber, vector<stClintData> &vClients)
+
+stClintData ChangeClient(string AccountNumber)
+{
+	stClintData Client;
+	Client.AccountNumber = AccountNumber;
+	cout << "Enter  PinCode? \n";
+	getline(cin >> ws, Client.PinCode);
+	cout << "Enter Name? \n";
+	getline(cin, Client.Name);
+	cout << "Enter Phone Number?  \n";
+	getline(cin, Client.PhoneNumber);
+	cout << "Enter Account Balance? \n";
+	cin >> Client.AccountBalance;
+
+return Client;
+}
+void UpdateClientByAccountNumber(string sAccountNumber, vector<stClintData>& vClients)
 {
 	stClintData Client;
 	char Answer = 'y';
-	
+
 	if (FindClientByAccountNumber(vClients, Client, sAccountNumber))
 	{
 		PrintClient(Client);
 
-		cout << "\n\nAre you sure you want delete this client? (y/n) ";
+		cout << "\n\nAre you sure you want Update this client? (y/n)? ";
 		cin >> Answer;
 
 		if (Answer == 'y' || Answer == 'Y')
 		{
-			MarkClientForDeleteByAccountNumber(sAccountNumber,vClients);
+			for (stClintData& C : vClients)
+			{
+				if (C.AccountNumber == sAccountNumber)
+				{
+					C = ChangeClient(sAccountNumber);
+					break;
+				}
+			}
 			SaveClientsDataToFile(FileName, vClients);
-			
-			vClients = LoadClientDataFromFile(FileName);
+
 
 			cout << "\n\nClient Deleted Successfully.";
-			return true;
 		}
 
 	}
 	else
 	{
 		cout << "\nClient with Account Number (" << sAccountNumber << ") is Not Found.";
-		return false;
 
 	}
-	
+
 }
 
 int main()
 {
 	vector<stClintData> Clients = LoadClientDataFromFile(FileName);
 	string AccountNumber = ReadClientAccountNumber();
-	
-	DeleteClientByAccountNumber(AccountNumber,Clients);
+
+	UpdateClientByAccountNumber(AccountNumber, Clients);
 
 }
