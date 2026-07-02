@@ -7,7 +7,6 @@
 using namespace std;
 
 const string FileName = "ClintFile.txt";
-short NumberOfClints = 0;
 const string seperator = "#//#";
 struct stClintData
 {
@@ -17,31 +16,6 @@ struct stClintData
 	string PhoneNumber;
 	double AccountBalance;
 };
-
-
-vector<string> ReadClintsFromFile(string FileName)
-{
-	vector<string> vLinesOfClintsData;
-
-	fstream ClintFile;
-	ClintFile.open(FileName, ios::in);
-
-	if (ClintFile.is_open())
-	{
-		string Line;
-
-		while (getline(ClintFile, Line))
-		{
-			vLinesOfClintsData.push_back(Line);
-			NumberOfClints++;
-		}
-
-		ClintFile.close();
-	}
-	return vLinesOfClintsData;
-
-
-}
 
 vector<string> SplitString(string text, string delim)
 {
@@ -66,60 +40,91 @@ vector<string> SplitString(string text, string delim)
 
 }
 
-vector<stClintData> ConvertLineDataToRecord( string seperator)
+stClintData ConvertLineDataToRecord(string RecordLine, string seperator)
 {
-	vector<stClintData> Clints;
+	stClintData Clint;
+	vector <string> vClintData;
 
-	vector <string> vClintsData = ReadClintsFromFile(FileName);
-	vector <string> vClintDataLine;
+	vClintData = SplitString(RecordLine, seperator);
+	Clint.AccountNumber = vClintData[0];
+	Clint.PinCode = vClintData[1];
+	Clint.Name = vClintData[2];
+	Clint.PhoneNumber = vClintData[3];
+	Clint.AccountBalance = stod(vClintData[4]);
 
 
-	for (int i = 0; i < 3; i++)
+	return Clint;
+
+}
+
+vector<stClintData> LoadClientDataFromFile(string FileName)
+{
+	vector <stClintData> vClints;
+
+	fstream ClintFile;
+	ClintFile.open(FileName, ios::in);
+
+	if (ClintFile.is_open())
 	{
+		string Line;
+	
 		stClintData Clint;
+		while (getline(ClintFile, Line))
+		{
+			Clint = ConvertLineDataToRecord(Line, seperator);
+			vClints.push_back(Clint);
 
-		vClintDataLine = SplitString(vClintsData[i], seperator);
 
-		Clint.AccountNumber = vClintDataLine[0];
-		Clint.PinCode = vClintDataLine[1];
-		Clint.Name = vClintDataLine[2];
-		Clint.PhoneNumber = vClintDataLine[3];
-		Clint.AccountBalance = stod(vClintDataLine[4]);
+		}
 
-		Clints.push_back(Clint);
-
+		ClintFile.close();
 	}
-	return Clints;
+	return vClints;
+
 
 }
 
-void PrintHeader()
-{
-	cout << "----------------------------------------------------------------------------------------------------------------\n";
-	cout << setw(20) << "| Account Number  " << setw(11) << "| Pin Code  |" << setw(50) << " Clint Name  |" << setw(11) << " Phone Number  |" << setw(10) << " Balance  |\n";
-	cout << "----------------------------------------------------------------------------------------------------------------\n";
 
+
+
+void PrintClientRecord(stClintData Client)
+{
+	cout << "| " << left << setw(15) <<Client.AccountNumber;
+	cout << "| " << left << setw(10) << Client.PinCode;
+	cout << "| " << left << setw(40) << Client.Name;
+	cout << "| " << left << setw(12) << Client.PhoneNumber;
+	cout << "| " << left << setw(12) << Client.AccountBalance;
 }
 
-void PrintAllClints(vector<stClintData> Clints)
+void PrintAllClints(vector<stClintData> vClints)
 {
-	PrintHeader();
-	for (stClintData& Clint : Clints)
+	cout << "\n\t\t\t\t\tClient list (" << vClints.size() << ") Client(s)." << endl;
+	cout << "\n_________________________________________________________";
+	cout << "__________________________________________" << endl;
+	cout << "| " << left << setw(15) << "Account Number";
+	cout << "| " << left << setw(10) << "Pin Code";
+	cout << "| " << left << setw(40) << "Client Name";
+	cout << "| " << left << setw(12) << "Phone";
+	cout << "| " << left << setw(12) << "Balance";
+	cout << "\n_________________________________________________________";
+	cout << "__________________________________________" << endl;
+
+	for (stClintData Clint : vClints)
 	{
-		cout <<   "| "<< setw(20) << Clint.AccountBalance << " | "  << " | " <<setw(11)<< Clint.PinCode << " | " <<  " | " << setw(50) << Clint.Name << " | " <<  " | " << setw(11) << Clint.PhoneNumber << " | " <<  " | " << setw(10) << Clint.AccountBalance << " | \n";
+		PrintClientRecord(Clint);
+		cout << endl;
 	}
 }
 
 
-void ShowAllClints()
-{
-	vector <stClintData> Clints = ConvertLineDataToRecord(seperator);
-	PrintAllClints(Clints);
 
-}
+	
+
+
 
 
 int main()
 {
-	ShowAllClints();
+	vector <stClintData> Clints = LoadClientDataFromFile(FileName);
+	PrintAllClints(Clints);
 }
