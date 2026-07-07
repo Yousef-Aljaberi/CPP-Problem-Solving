@@ -25,7 +25,7 @@ int NumberOfSecendsInYear(int Year)
 {
 	return NumberOfMinutsInYear(Year) * 60;
 }
-int ReadYear()
+short ReadYear()
 {
 	int Year;
 	cout << "\nPlease enter a year to check? ";
@@ -36,7 +36,7 @@ int ReadYear()
 
 int  main()
 {
-	int Year = ReadYear();
+	short Year = ReadYear();
 	
 
 		cout << "\nNumber of Days    in Year [" << Year << "] is " << NumberOfDaysInYear(Year);

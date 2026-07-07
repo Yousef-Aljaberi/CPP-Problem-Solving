@@ -148,7 +148,16 @@
     <ClCompile Include="C8 PS L4 P3 Leap Year (One Line Of Code).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="C8 PS L4 P4 Number of Day-Hours-Minutes-Seconds In a Year.cpp" />
+    <ClCompile Include="C8 PS L4 P4 Number of Day-Hours-Minutes-Seconds In a Year.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P5 Number of Days-Hours-Minutes-Seconds In a Month.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P6 Number of Days In a Month Short Logic.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P7 Day Name.cpp" />
     <ClCompile Include="PS L2 P11 Palindrome Number.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

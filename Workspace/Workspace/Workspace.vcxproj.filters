@@ -258,6 +258,15 @@
     <ClCompile Include="C8 PS L4 P4 Number of Day-Hours-Minutes-Seconds In a Year.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="C8 PS L4 P5 Number of Days-Hours-Minutes-Seconds In a Month.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P6 Number of Days In a Month Short Logic.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P7 Day Name.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">
