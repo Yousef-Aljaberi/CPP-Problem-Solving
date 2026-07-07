@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Course 5 %28Problem Solving%29">
       <UniqueIdentifier>{499ef3e5-8f6d-43a6-93aa-c10bdd5f05c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Course 8 %28Problem Solving%29">
+      <UniqueIdentifier>{52a30515-0fcb-4fde-a436-498805203109}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Inverted_Number_Pattern.cpp">
@@ -242,6 +245,18 @@
     </ClCompile>
     <ClCompile Include="PS L3 P51 Update Client By AccountNumber.cpp">
       <Filter>Source Files\Course 7 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P1 Number To Text.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P2 Leap Year.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P3 Leap Year (One Line Of Code).cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P4 Number of Day-Hours-Minutes-Seconds In a Year.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
