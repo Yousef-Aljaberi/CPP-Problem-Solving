@@ -265,7 +265,19 @@
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="C8 PS L4 P7 Day Name.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P8 Month Calendar.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P10 Days from the beginning of Year.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P11 Date from Day Order in a Year.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P12  Add Days to Date.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

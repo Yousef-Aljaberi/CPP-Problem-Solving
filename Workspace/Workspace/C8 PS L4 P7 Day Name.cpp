@@ -24,7 +24,7 @@ short ReadYear()
 	return Year;
 }
 
-short IndexOfDay(short Year, short Month, short Day)
+short GetIndexOfDay(short Year, short Month, short Day)
 {
 	int a = (14 - Month) / 12;
 	int y = Year - a;
@@ -48,9 +48,9 @@ int main()
 	short Year = ReadYear();
 	short Month = ReadMonth();
 	short Day = ReadDay();
-	short index = IndexOfDay(Year, Month, Day);
+	short IndexOfDay = GetIndexOfDay(Year, Month, Day);
 	cout << "\nDate      :" << Day << "/" << Month << "/" << Year;
-	cout << "\nDay Order :" << index;
-	cout << "\nDay Name  :" << DayName(index);
+	cout << "\nDay Order :" << IndexOfDay;
+	cout << "\nDay Name  :" << DayName(IndexOfDay);
 
 }
