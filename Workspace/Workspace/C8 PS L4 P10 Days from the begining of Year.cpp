@@ -12,7 +12,7 @@ short NumberOfDaysInMoth(short Year, short Month)
 
 	short NumberOfDays[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 
-	return (Month == 2) ? (IsLeapYear(Year) ? 29 : 30) : NumberOfDays[Month - 1];
+	return (Month == 2) ? (IsLeapYear(Year) ? 29 : 28) : NumberOfDays[Month - 1];
 }
 
 short NumberOfDayFromBeginingOfYear(short Year, short Month, short Day)

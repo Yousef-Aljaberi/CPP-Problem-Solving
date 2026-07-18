@@ -12,7 +12,18 @@ short NumberOfDaysInMoth(short Year, short Month)
 
 	short NumberOfDays[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 
-	return (Month == 2) ? (IsLeapYear(Year) ? 29 : 30) : NumberOfDays[Month - 1];
+	return (Month == 2) ? (IsLeapYear(Year) ? 29 : 28) : NumberOfDays[Month - 1];
+}
+short NumberOfDayFromBeginingOfYear(short Year, short Month, short Day)
+{
+	short NumberOfDays = 0;
+	for (int i = 1; i <= Month - 1; i++)
+	{
+		NumberOfDays += NumberOfDaysInMoth(Year, i);
+	}
+	NumberOfDays += Day;
+
+	return NumberOfDays;
 }
 
 
@@ -22,45 +33,27 @@ struct stDate
 	short Month;
 	short Day;
 };
-stDate AddDaysToDate(short Day,short Month,short Year,int DaysToAdd)
+stDate AddDaysToDate(stDate Date,int DaysToAdd)
 {
-	stDate Date;
+	short RemainingDays = DaysToAdd + NumberOfDayFromBeginingOfYear(Date.Year, Date.Month, Date.Day);
 	short MonthDays = 0;
-	short NumberOfDaysInYear = IsLeapYear(Year) ? 366 : 365;
-
-	Date.Year = Year;
-	Date.Month = Month;
-	Date.Day = Day;
+	Date.Month = 1;
 	while (true)
 	{
 		MonthDays = NumberOfDaysInMoth(Date.Year, Date.Month);
-		if ( DaysToAdd> NumberOfDaysInYear)
+		if (RemainingDays > MonthDays )
 		{
-			DaysToAdd -= NumberOfDaysInYear;
-			Date.Year++;
-		    NumberOfDaysInYear = IsLeapYear(Year) ? 366 : 365;
-		}
-
-		else if (DaysToAdd > MonthDays)
-		{
-			DaysToAdd -= MonthDays;
+			RemainingDays -= MonthDays;
 			Date.Month++;
 			if (Date.Month > 12)
 			{
 				Date.Year++;
-				Date.Month -=12;
-			}
+				Date.Month = 1;
+	   	    }
 		}
-
 		else
 		{
-			Date.Day += DaysToAdd;
-			short MonthDay = NumberOfDaysInMoth(Date.Year, Date.Month);
-			if (Date.Day > MonthDay)
-			{
-				Date.Day -= MonthDay;
-				Date.Month++;
-			}
+			Date.Day =RemainingDays;
 			break;
 		}
 	}
@@ -101,18 +94,25 @@ int ReadYear()
 	return Year;
 }
 
+stDate ReadDate()
+{
+	stDate Date;
+	Date.Day = ReadDay();
+	Date.Month = ReadMonth();
+	Date.Year = ReadYear();
+	return Date;
+}
+
 int main()
 {
-	short Day = ReadDay();
-	short Month = ReadMonth();
-	short Year = ReadYear();
-	short DaysToAdd = ReadDaysToAdd();
+	stDate Date = ReadDate();
+	int DaysToAdd = ReadDaysToAdd();
 
 
 
-	stDate Date = AddDaysToDate(Day,Month, Year,DaysToAdd);
+	Date = AddDaysToDate(Date,DaysToAdd);
 
-	cout << "\nDate after adding  [" << DaysToAdd << "] is: " << Date.Day << "/" << Date.Month << "/" << Date.Year;
+	cout << "\nDate after adding  [" << DaysToAdd << "] days  is: " << Date.Day << "/" << Date.Month << "/" << Date.Year;
 
 	system("pause>0");
 	return 0;

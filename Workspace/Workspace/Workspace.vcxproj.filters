@@ -270,13 +270,34 @@
     <ClCompile Include="C8 PS L4 P8 Month Calendar.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
-    <ClCompile Include="C8 PS L4 P10 Days from the beginning of Year.cpp">
+    <ClCompile Include="C8 PS L4 P10 Days from the begining of Year.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="C8 PS L4 P11 Date from Day Order in a Year.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
     <ClCompile Include="C8 PS L4 P12  Add Days to Date.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P9 Year Clender.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P14 Date 1 less Than Date 2.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P15 is Dates are Equal.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P16 Is Last Day In Month, Is Last Month in Year.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P17 Diff In Days.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P18 Your Age In Days.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P20_32 Increase Date Problems.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
   </ItemGroup>

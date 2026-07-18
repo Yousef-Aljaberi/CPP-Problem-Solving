@@ -35,16 +35,6 @@ string MonthShortName(short Month)
 	return arrShortMonthName[Month - 1];
 }
 
-short ReadMonth()
-{
-	int Month;
-	do
-	{
-		cout << "\nPlease enter a Month? ";
-		cin >> Month;
-	} while (Month > 12 || Month < 1);
-	return Month;
-}
 
 short ReadYear()
 {
@@ -57,22 +47,22 @@ short ReadYear()
 void PrintMonthCalendar(int Year, short Month)
 {
 	short NumberOfDayInMonth = NumberOfDaysInMoth(Year, Month);
-	
+
 	//index of the day 0 to 6
 	short IndexOfDay = GetIndexOfDay(Year, Month, 1);
 
 
 	//print currn month name
-	printf("---------------------------%s---------------------------\n\n", MonthShortName(Month).c_str());
+	printf("\n---------------------------%s---------------------------\n\n", MonthShortName(Month).c_str());
 
 	//print the columns
 	printf("  Sun  Mon  Tue  Wed  Thu  Fri  Sat\n");
-	int i ;
+	int i;
 	//print appropriate space
-	for ( i = 0; i < IndexOfDay; i++)
+	for (i = 0; i < IndexOfDay; i++)
 		printf("     ");
-	
-	
+
+
 	for (int j = 1; j <= NumberOfDayInMonth; j++)
 	{
 		printf("%5d", j);
@@ -87,10 +77,20 @@ void PrintMonthCalendar(int Year, short Month)
 	cout << "\n-------------------------------------------------------\n";
 }
 
+void PrintYearCalender(short Year)
+{
+	cout << "\n-------------------------------------------------------\n";
+	cout << "\t\t\t Calender - " << Year;
+	cout << "\n-------------------------------------------------------\n";
+
+	for (short i = 1; i <= 12; i++)
+	{
+		PrintMonthCalendar(Year, i);
+	}
+}
+
 int main()
 {
 	short Year = ReadYear();
-	short Month = ReadMonth();
-
-	PrintMonthCalendar(Year, Month);
+	PrintYearCalender(Year);
 }
