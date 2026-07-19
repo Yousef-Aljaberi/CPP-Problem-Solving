@@ -300,6 +300,9 @@
     <ClCompile Include="C8 PS L4 P20_32 Increase Date Problems.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="C8 PS L4 P 33 to 46  Decrease Date  Problems.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">
