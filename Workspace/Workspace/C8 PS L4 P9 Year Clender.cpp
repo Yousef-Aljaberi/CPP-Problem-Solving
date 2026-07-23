@@ -2,7 +2,7 @@
 #include<iomanip>
 #include<cstdio>
 using namespace std;
-short GetIndexOfDay(short Year, short Month, short Day)
+short DayOfWeekOrder(short Year, short Month, short Day)
 {
 	int a = (14 - Month) / 12;
 	int y = Year - a;
@@ -18,7 +18,7 @@ bool IsLeapYear(int Year)
 {
 	return (Year % 4 == 0 && Year % 100 != 0) || (Year % 400 == 0);
 }
-short NumberOfDaysInMoth(short Year, short Month)
+short NumberOfDaysInMonth(short Year, short Month)
 {
 	if (Month < 1 || Month>12)
 		return 0;
@@ -46,10 +46,10 @@ short ReadYear()
 
 void PrintMonthCalendar(int Year, short Month)
 {
-	short NumberOfDayInMonth = NumberOfDaysInMoth(Year, Month);
+	short NumberOfDayInMonth = NumberOfDaysInMonth(Year, Month);
 
 	//index of the day 0 to 6
-	short IndexOfDay = GetIndexOfDay(Year, Month, 1);
+	short IndexOfDay = DayOfWeekOrder(Year, Month, 1);
 
 
 	//print currn month name

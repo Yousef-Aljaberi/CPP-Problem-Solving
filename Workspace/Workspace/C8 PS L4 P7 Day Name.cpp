@@ -24,7 +24,7 @@ short ReadYear()
 	return Year;
 }
 
-short GetIndexOfDay(short Year, short Month, short Day)
+short DayOfWeekOrder(short Year, short Month, short Day)
 {
 	int a = (14 - Month) / 12;
 	int y = Year - a;
@@ -35,7 +35,7 @@ short GetIndexOfDay(short Year, short Month, short Day)
 
 }
 
-string DayName(short index)
+string ShortDayName(short index)
 {
 	
 	string arrDaysName[7] = { "Sun","Mon","Tue","Wed","Thu","Fri","Sat" };
@@ -48,9 +48,9 @@ int main()
 	short Year = ReadYear();
 	short Month = ReadMonth();
 	short Day = ReadDay();
-	short IndexOfDay = GetIndexOfDay(Year, Month, Day);
+	short IndexOfDay = DayOfWeekOrder(Year, Month, Day);
 	cout << "\nDate      :" << Day << "/" << Month << "/" << Year;
 	cout << "\nDay Order :" << IndexOfDay;
-	cout << "\nDay Name  :" << DayName(IndexOfDay);
+	cout << "\nDay Name  :" << ShortDayName(IndexOfDay);
 
 }

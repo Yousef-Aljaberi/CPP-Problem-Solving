@@ -4,7 +4,7 @@ bool IsLeapYear(int Year)
 {
 	return (Year % 4 == 0 && Year % 100 != 0) || (Year % 400 == 0);
 }
-short NumberOfDaysInMoth(short Year, short Month)
+short NumberOfDaysInMonth(short Year, short Month)
 {
 	if (Month < 1 || Month>12)
 		return 0;
@@ -35,7 +35,7 @@ int main()
 	short Year = ReadYear();
 	short Month = ReadMonth();
 
-	cout << "\nNumber of Days    in Month [" << Month << "] is " << NumberOfDaysInMoth(Year, Month);
+	cout << "\nNumber of Days    in Month [" << Month << "] is " << NumberOfDaysInMonth(Year, Month);
 
 	
 	cout << endl;

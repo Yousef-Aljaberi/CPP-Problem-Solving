@@ -5,7 +5,7 @@ bool IsLeapYear(short Year)
 {
 	return (Year % 4 == 0 && Year % 100 != 0) || (Year % 400 == 0);
 }
-short NumberOfDaysInMoth(short Year, short Month)
+short NumberOfDaysInMonth(short Year, short Month)
 {
 	if (Month < 1 || Month>12)
 		return 0;
@@ -20,7 +20,7 @@ short NumberOfDayFromBeginingOfYear(short Year, short Month, short Day)
 	short NumberOfDays = 0;
 	for (int i = 1; i <= Month - 1; i++)
 	{
-		NumberOfDays += NumberOfDaysInMoth(Year, i);
+		NumberOfDays += NumberOfDaysInMonth(Year, i);
 	}
 	NumberOfDays += Day;
 
@@ -43,7 +43,7 @@ stDate GetDateFromDayOrderInYear(short DateOrderInYear,int Year)
 	Date.Month = 1;
 	while (true)
 	{
-		MonthDays = NumberOfDaysInMoth(Date.Year, Date.Month);
+		MonthDays = NumberOfDaysInMonth(Date.Year, Date.Month);
 		if (RemainingDays > MonthDays)
 		{
 			RemainingDays -= MonthDays;

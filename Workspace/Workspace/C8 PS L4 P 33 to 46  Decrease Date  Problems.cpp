@@ -79,8 +79,9 @@ stDate DecreaseDateByOneMonth(stDate Date)
 {
 	if (Date.Month == 1)
 	{
-		Date.Year--;
 		Date.Month = 12;
+		Date.Year--;
+		
 	}
 	else
 	{
@@ -107,19 +108,12 @@ stDate DecreaseDateByXMonth(stDate Date,int Months)
 stDate DecreaseDateByOneYear(stDate Date)
 {
 	Date.Year--;
-	if (IsLeapYear(Date.Year) && Date.Month == 2 && Date.Day == 29)
-	{
-		Date.Day = 28;
-	}
 
 	return Date;
 }
 stDate DecreaseDateByXYear(stDate Date, int Years)
 {
-	for (int i = 1; i <= Years; i++)
-	{
-		Date = DecreaseDateByOneYear(Date);
-	}
+	Date.Year -= Years;
 	return Date;
 }
 
