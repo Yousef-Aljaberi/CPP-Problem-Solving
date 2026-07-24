@@ -306,6 +306,21 @@
     <ClCompile Include="C8 PS L4 P47_53More Date Problems.cpp">
       <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
     </ClCompile>
+    <ClCompile Include="C8 PS L4 P54 Calculate Vacation Days.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P55 Calculate Vaction Return Date.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P56 Is Date1 after Date2.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P57 Compare Date Function.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
+    <ClCompile Include="C8 PS L4 P58 Is Overlap Perods.cpp">
+      <Filter>Source Files\Course 8 %28Problem Solving%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLibe.h">
